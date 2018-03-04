@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jonnie Hallman"]
   spec.email         = ["jonnie@destroytoday.com"]
 
-  spec.description   = "OmniAuth strategy for Xero"
+  spec.description   = "OmniAuth strategy for Xero Partner Application"
   spec.summary       = spec.description
   spec.homepage      = "https://github.com/cushion/omniauth-xero"
   spec.license       = "MIT"
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "omniauth", "~> 1.2"
-  spec.add_runtime_dependency "xeroizer", "~> 2.16.5"
+  spec.add_runtime_dependency "xeroizer", "~> 2.17.0"
 
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
