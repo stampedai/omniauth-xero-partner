@@ -1,13 +1,13 @@
 # OmniAuth::Xero
 
-[OmniAuth](https://github.com/intridea/omniauth) strategy for [Xero partner](http://developer.xero.com/partner/) applications.
+[OmniAuth](https://github.com/intridea/omniauth) strategy for [Xero Partner](http://developer.xero.com/partner/) applications.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'omniauth-xero', github: 'cushion/omniauth-xero'
+gem 'omniauth-xero-partner', github: 'xplenty/omniauth-xero-partner'
 ```
 
 And then execute:
@@ -39,7 +39,7 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/cushion/omniauth-xero.
+Bug reports and pull requests are welcome on GitHub at https://github.com/cushion/omniauth-xero-partner.
 
 ## License
 
