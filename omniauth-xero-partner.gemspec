@@ -4,14 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'omniauth/xero/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "omniauth-xero-partner"
+  spec.name          = "omniauth-xero"
   spec.version       = Omniauth::Xero::VERSION
   spec.authors       = ["Moty Michaely"]
   spec.email         = ["moty@xplenty.com"]
 
   spec.description   = "OmniAuth strategy for Xero Partner Application"
   spec.summary       = spec.description
-  spec.homepage      = "https://github.com/cushion/omniauth-xero-partner"
+  spec.homepage      = "https://github.com/cushion/omniauth-xero"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }

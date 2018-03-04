@@ -7,7 +7,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'omniauth-xero-partner', github: 'xplenty/omniauth-xero-partner'
+gem 'omniauth-xero', github: 'xplenty/omniauth-xero-partner'
 ```
 
 And then execute:
