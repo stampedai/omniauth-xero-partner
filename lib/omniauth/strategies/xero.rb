@@ -21,7 +21,7 @@ module OmniAuth
       end
 
       def request_phase
-        request_token = @xero.client.request_token(oauth_callback: callback_url_no_query_string)
+        request_token = @xero.client.request_token(oauth_callback: callback_url)
 
         session['oauth'] ||= {}
         session['oauth'][name.to_s] = {
@@ -32,7 +32,7 @@ module OmniAuth
 
         authorize_params = {}
         unless request_token.callback_confirmed?
-          authorize_params[:oauth_callback] = callback_url_no_query_string
+          authorize_params[:oauth_callback] = callback_url
         end
 
         redirect request_token.authorize_url(authorize_params)
@@ -93,10 +93,6 @@ module OmniAuth
         }
       end
 
-      def callback_url_no_query_string
-        # Special handling for cases in which query string is too long for Xero to accept
-        full_host + script_name + callback_path
-      end
 
       private
 
